@@ -19,9 +19,13 @@ while is_game_on:
 
     screen.listen()
     screen.onkey(snake.up, 'w')
+    screen.onkey(snake.up, 'W')
     screen.onkey(snake.left, 'a')
+    screen.onkey(snake.left, 'A')
     screen.onkey(snake.down, 's')
+    screen.onkey(snake.down, 'S')
     screen.onkey(snake.right, 'd')
+    screen.onkey(snake.right, 'D')
     screen.update()
     time.sleep(0.075)
     score.print_score()
